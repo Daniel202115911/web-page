@@ -1,5 +1,11 @@
 
 @media(max-width: 720px){
+
+    .head-container .featurette{
+        display: flex;
+        flex-direction: column;
+    }
+
     .daisy{
         border-radius: 50%;
         width: 40vw;
@@ -19,6 +25,11 @@
 }
 
 @media(min-width: 720px){
+    .head-container .featurette{
+        display: flex;
+        flex-direction: column;
+    }
+
     .daisy{
         border-radius: 50%;
         width: 30vw;
@@ -55,6 +66,10 @@
         order:2;
     }
 
+    .head-container .featurette{
+        display: flex;
+        flex-direction: row !important;
+    }
     .top-row-left{
         order:1;
     }
@@ -71,9 +86,7 @@
 
 }
 
-.main-container{
-    width: 100vw;
-}
+
 
 
 .featurette{
@@ -88,7 +101,6 @@
     padding-bottom: 100px;
     justify-content: center;
     align-items: center;   
-    width: 100vw;
 }
 
 .featurette .lead{
@@ -134,7 +146,7 @@
     position: fixed;
     background-color: rgba(128, 128, 128, 0.8);
     z-index: 1;
-    width: 99vw;
+    width: 100vw;
 }
 
 .nav-pills .nav-link {
