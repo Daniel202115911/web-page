@@ -15,19 +15,7 @@
     .top-row-left{
         order:2;
     }
-    .featurette{
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 30px;
-        background-image: url("images/mojave.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        justify-content: center;
-        align-items: center;   
-    }
+
 }
 
 @media(min-width: 720px){
@@ -46,19 +34,7 @@
     .top-row-left{
         order:2;
     }
-    .featurette{
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 30px;
-        background-image: url("images/mojave.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        justify-content: center;
-        align-items: center;   
-    }
+
 
     .text-body-secondary{
         text-shadow: none;
@@ -92,20 +68,22 @@
         font-size: 50px;
     }
 
-    .featurette{
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 30px;
-        background-image: url("images/mojave.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        justify-content: center;
-        align-items: center;   
-        
-    }
+
+}
+
+.featurette{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    background-image: url("images/mojave.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;   
+    
 }
 
 .featurette .lead{
