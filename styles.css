@@ -16,10 +16,16 @@
         align-items: center;   
         padding-top: 10px;
         padding-bottom: 10px;
-        order: 1;
+        order: 2;
     }
     .top-row-left{
-        order:2;
+        order:1;
+        color: white;
+    }
+    h2.lead{
+        color: white;
+        font-weight: 200 !important;
+        font-size: medium;
     }
 
 }
@@ -40,10 +46,15 @@
         align-items: center;   
         padding-top: 10px;
         padding-bottom: 10px;
-        order: 1;
+        order: 2;
     }
     .top-row-left{
-        order:2;
+        order:1;
+    }
+    h2.lead{
+        color: white;
+        font-weight: 200 !important;
+        font-size: medium;
     }
 
 
@@ -54,11 +65,13 @@
 
 @media(min-width: 992px){
     
+
     .daisy{
         border-radius: 50%;
         width: 20vw;
         height: auto;
     }
+
     .top-row-right{
         justify-content: center;
         align-items: center;   
@@ -72,13 +85,17 @@
     }
     .top-row-left{
         order:1;
+        text-align: right;
+        padding-right: 5%;
     }
 
     .top-row-right > h2{
         font-size: 20px;
         text-align: left;
+        color: black;
         
     }
+
     .text-body-secondary{
         font-size: 50px;
     }
