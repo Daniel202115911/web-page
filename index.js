@@ -7,11 +7,11 @@
   const isHomepage = window.location.pathname === "/";
 
   // Enable the download link if not on the homepage
-  if (!isHomepage) {
+  {/* if (!isHomepage) {
     const downloadLink = document.getElementById("homepage-download");
     if (downloadLink) {
       downloadLink.removeAttribute("disabled");
     }
-  }
+  } */}
 </script>
 
