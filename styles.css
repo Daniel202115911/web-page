@@ -291,3 +291,13 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+
+.gif-container{
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;   
+}
+
+.gif{
+    margin-bottom: 30px;
+}
