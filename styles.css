@@ -80,43 +80,6 @@
     }
 }
 
-/* @media(min-width: 1200px){
-    .main-container{
-        width: 1200px;
-        display: block;
-        margin: 0 auto;
-    }
-    .daisy{
-        border-radius: 50%;
-        width: 200px;
-        height: auto;
-    }
-    .top-row-right{
-        justify-content: center;
-        align-items: center;   
-        padding-top: 10px;
-        order:2;
-    }
-    .head-container .featurette{
-        display: flex;
-        flex-direction: row !important;
-    }
-    .top-row-left{
-        order:1;
-        text-align: right;
-        padding-right: 5%;
-    }
-    .top-row-right > h2{
-        font-size: 20px;
-        text-align: left;
-        color: black;
-        
-    }
-    .text-body-secondary{
-        font-size: 50px;
-    }
-
-} */
 
 @media(min-width: 1200px){
 
@@ -167,6 +130,14 @@
 
     .text-body-secondary{
         text-shadow: none;
+    }
+
+    #myCarousel-review{
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;   
+        padding-right: 10%;   
+
     }
 }
     
@@ -301,3 +272,4 @@
 .gif{
     margin-bottom: 30px;
 }
+
