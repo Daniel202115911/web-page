@@ -1,11 +1,18 @@
 .main-title{
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.technology{
+    text-align: center;
+    font-weight: 100;
 }
 
 .btn-options{
@@ -92,4 +99,14 @@ button{
 
 .featurette-divider{
     width: 70%;
+}
+
+#bottom-comment{
+    font-weight: 200;
+    font-size: x-small;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
 }
