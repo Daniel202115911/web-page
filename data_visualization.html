@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data Visualization Portfolio</title>
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+
+
+
+<body>
+    <h1 class = 'main-title'>North Carolina Parks and Recreation Data</h1>
+    <h1 class = 'main-title'>(2011-2019)</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr class="featurette-divider">
+    <br>
+    <br>
+    
+    <div class = 'visual'>
+        <h1 class = 'title'>When Do They Visit?</h1>
+        <div class = 'heatmap'>
+            <img class ='heat_img' id="heat_upper" src="images/data_vis/heat/h_everyone.png">
+            <img class ='heat_img' id="heat_lower" src="images/data_vis/heat/h.png">
+        </div>
+        <div class = 'btn-options'>
+            <button onclick="changeHeatmap('images/data_vis/heat/h_adult.png')">Adult</button>
+            <button onclick="changeHeatmap('images/data_vis/heat/h_everyone.png')">Everyone</button>
+            <button onclick="changeHeatmap('images/data_vis/heat/h_homeschool.png')">Homeschool</button>
+            <button onclick="changeHeatmap('images/data_vis/heat/h_preschool.png')">Preschool</button>
+            <button onclick="changeHeatmap('images/data_vis/heat/h_youth.png')">Youth/Teen</button>        
+        </div>
+        <div class = 'checkbox'>
+            <label><input type="checkbox" name="normalize data">Data Normalization</label>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+    <div class = visual>
+        <br>
+        <br>
+        <h1 class = 'title' id = 'plotly-pie-title'>Activity Breakdown by Center</h1>
+    
+        <div class ='iframe-control'>
+            <iframe id="plotly-pie" src='./sub_html/plotly_pie/breakdown_activity.html'></iframe>
+        </div>
+        
+        <div class = 'btn-options'>
+            <button onclick="changePie1('./sub_html/plotly_pie/breakdown_activity.html')">Activity</button>
+            <button onclick="changePie2('./sub_html/plotly_pie/breakdown_age.html')">Age Group</button>
+            <button onclick="changePie3('./sub_html/plotly_pie/breakdown_gender.html')">Gender</button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class = visual>
+        <br>
+        <br>
+        <h1 class = 'title'>Favorite Activity</h1>
+        <div class = 'matplotlib-pie'>
+            <img class ='pie_img' id="pie_img" src="images/data_vis/activity/6.png">
+        </div>
+        <div class = 'btn-options'>
+            <button onclick="changePLTpie('images/data_vis/activity/6.png')">Total</button>
+            <button onclick="changePLTpie('images/data_vis/activity/1.png')">Everyone</button>
+            <button onclick="changePLTpie('images/data_vis/activity/2.png')">Adult</button>
+            <button onclick="changePLTpie('images/data_vis/activity/3.png')">Teen/Youth</button>
+            <button onclick="changePLTpie('images/data_vis/activity/4.png')">Homeschool</button>
+            <button onclick="changePLTpie('images/data_vis/activity/5.png')">Preschool</button>       
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+
+
+    <div class = visual>
+        <br>
+        <br>
+        <h1 class = 'title' id = 'plotly-bar-title'>Total Visitors by Age Group</h1>
+    
+        <div class ='iframe-control'>
+            <iframe id="plotly-bar" src='./sub_html/plotly_bar/bar_age.html'></iframe>
+        </div>
+        
+        <div class = 'btn-options'>
+            <button onclick="changeBar1('./sub_html/plotly_bar/bar_age.html')">Age Group</button>
+            <button onclick="changeBar2('./sub_html/plotly_bar/bar_facility.html')">Facility</button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+    <script>
+        function changePie1(src) {
+            let title = document.getElementById('plotly-pie-title');
+            let title1 = 'Activity Breakdown by Center';
+            title.textContent = title1;
+            document.getElementById('plotly-pie').src = src;
+        }
+        function changePie2(src) {
+            let title = document.getElementById('plotly-pie-title');
+            let title2 = 'Age-group Breakdown by Center'
+            title.textContent = title2;
+            document.getElementById('plotly-pie').src = src;
+            
+        }
+        function changePie3(src) {
+            let title = document.getElementById('plotly-pie-title');
+            let title3 = 'Gender Breakdown by Center'
+            title.textContent = title3;
+            document.getElementById('plotly-pie').src = src;
+            
+        }
+
+        function changeHeatmap(src){
+            document.getElementById('heat_upper').src = src;
+        }
+
+        function changeHeatmapLarge(src){
+            document.getElementById('heat_lower').src = src;
+        }
+        // <img class ='heat_img' id="heat_lower" src="images/data_vis/heat/h.png">
+        let checkbox = document.querySelector('.checkbox input[type="checkbox"]');
+        checkbox.addEventListener('change', function(){
+            if(this.checked){
+                changeHeatmapLarge("images/data_vis/heat/h_log.png")
+            } else {
+                changeHeatmapLarge("images/data_vis/heat/h.png")
+            }
+        });
+
+
+        function changePLTpie(src){
+            document.getElementById('pie_img').src = src;
+        }
+
+
+
+        function changeBar1(src) {
+            let title = document.getElementById('plotly-bar-title');
+            let title1 = 'Total Visitors by Age Group';
+            title.textContent = title1;
+            document.getElementById('plotly-bar').src = src;
+        }
+        function changeBar2(src) {
+            let title = document.getElementById('plotly-bar-title');
+            let title2 = 'Total Visitors by Facility';
+            title.textContent = title2;
+            document.getElementById('plotly-bar').src = src;
+            
+        }
+
+    </script>
+
+
+
+
+
+</body>
+</html>

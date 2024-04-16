@@ -1,0 +1,95 @@
+.main-title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.btn-options{
+    text-align: center;
+}
+.checkbox{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    margin: 3px;
+    border-radius: 4px;
+    background: white;
+    width: 100px;
+    height: 35px;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.scroll-container {
+    width: 100%; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    display: flex; /* Lays out children horizontally */
+    align-items: center; /* Centers items vertically within the container */
+    white-space: nowrap; /* Prevents wrapping of items */
+}
+
+/* Style for individual items within the container */
+.item {
+    flex: 0 0 auto; /* Prevents items from growing or shrinking */
+    width: 200px; /* Fixed width for each item */
+    height: 100px; /* Fixed height for each item */
+    margin-right: 20px; /* Space between items */
+    background-color: #f0f0f0; /* Background color for items */
+    display: flex; /* Enables flexbox properties for centering text */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    border: 1px solid #ccc; /* Adds border around each item */
+}
+.heat_img{
+    text-align: center;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 20px;
+}
+#plotly-pie{
+    width:720px;
+    height:750px;
+    justify-content: center;
+    text-align: center;
+    border: none;
+}
+
+
+
+.iframe-control{
+    justify-content: center;
+    text-align: center;
+}
+
+.matplotlib-pie{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 130px;
+    margin-bottom: 35px;
+}
+
+#plotly-bar{
+    width:1000px;
+    height:650px;
+    margin-left: -80px;
+    justify-content: center;
+    text-align: center;
+    border: none;
+}
+
+.featurette-divider{
+    width: 70%;
+}
