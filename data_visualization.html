@@ -20,9 +20,9 @@
     
     <div class = 'visual'>
         <h1 class = 'title'>When Do They Visit?</h1>
-        <div class = 'heatmap'>
-            <img class ='heat_img' id="heat_upper" src="images/data_vis/heat/h_everyone.png">
-            <img class ='heat_img' id="heat_lower" src="images/data_vis/heat/h.png">
+        <div class = 'plotted_img_div'>
+            <img class ='plotted_img' id="heat_upper" src="images/data_vis/heat/h_everyone.png">
+            <img class ='plotted_img' id="heat_lower" src="images/data_vis/heat/h.png">
         </div>
         <div class = 'btn-options'>
             <button onclick="changeHeatmap('images/data_vis/heat/h_everyone.png')">Everyone</button>
@@ -153,9 +153,9 @@
     
     <br>
     <br>
-    <div class = 'heatmap'>
+    <div class = 'plotted_img_div'>
         <h1 class = 'title'>Average Number of Babies Born</h1>
-        <img class ='heat_img' id="heat_upper" src="images/data_vis/others/babies.png">
+        <img class ='plotted_img' id="heat_upper" src="images/data_vis/others/babies.png">
     </div>
     <h4 class = 'technology'>Technologies Used: Matplotlib, Pandas, Seaborn</h4>
     <br>
@@ -172,10 +172,10 @@
     <br>
     <hr class="featurette-divider">
 
-    <div class = 'heatmap'>
+    <div class = 'plotted_img_div'>
         <h1 class = 'title'>Trajectory of the Solar Eclipse</h1>
         <h3 class = 'subtitle'>April 8, 2024</h3>
-        <img class ='heat_img' id="heat_lower" src="images/data_vis/others/eclipse.png">
+        <img class ='plotted_img' id="heat_lower" src="images/data_vis/others/eclipse.png">
     </div>
     <h4 class = 'technology'>Technologies Used: Matplotlib, Pandas, Numpy, Geopandas</h4>
     <br>
@@ -226,7 +226,7 @@
         function changeHeatmapLarge(src){
             document.getElementById('heat_lower').src = src;
         }
-        // <img class ='heat_img' id="heat_lower" src="images/data_vis/heat/h.png">
+        // <img class ='plotted_img' id="heat_lower" src="images/data_vis/heat/h.png">
         let checkbox = document.querySelector('.checkbox input[type="checkbox"]');
         checkbox.addEventListener('change', function(){
             if(this.checked){
