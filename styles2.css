@@ -47,8 +47,9 @@
 
 button{
     margin: 3px;
-    border-radius: 4px;
-    background: white;
+    border-radius: 2px;
+    border-color: gray;
+    background: #f6f6f6;
     width: 100px;
     height: 35px;
     font-size: 0.8rem;
