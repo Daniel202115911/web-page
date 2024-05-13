@@ -6,11 +6,6 @@
         flex-direction: column;
     }
 
-    .daisy{
-        border-radius: 50%;
-        width: 40vw;
-        height: auto;
-    }
     .top-row-right{
         justify-content: center;
         align-items: center;   
@@ -45,11 +40,6 @@
         flex-direction: column;
     }
 
-    .daisy{
-        border-radius: 50%;
-        width: clamp(290px, 30vw, 300px);
-        height: auto;
-    }
     .top-row-right{
         justify-content: center;
         align-items: center;   
@@ -93,11 +83,7 @@
         flex-direction: column;
     }
 
-    .daisy{
-        border-radius: 50%;
-        width: 300px;
-        height: auto;
-    }
+
     .top-row-right{
         justify-content: center;
         align-items: center;   
@@ -141,7 +127,9 @@
     }
 }
     
-
+.top-row-right h2{
+    text-shadow: 1px 1px 0px black;
+}
 
 
 
