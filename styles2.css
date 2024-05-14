@@ -62,25 +62,25 @@ button{
 
 
 .scroll-container {
-    width: 100%; /* Adjust width as needed */
-    height: 150px; /* Adjust height as needed */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    display: flex; /* Lays out children horizontally */
-    align-items: center; /* Centers items vertically within the container */
-    white-space: nowrap; /* Prevents wrapping of items */
+    width: 100%; 
+    height: 150px; 
+    overflow-x: auto; 
+    display: flex; 
+    align-items: center; 
+    white-space: nowrap; 
 }
 
 /* Style for individual items within the container */
 .item {
-    flex: 0 0 auto; /* Prevents items from growing or shrinking */
-    width: 200px; /* Fixed width for each item */
-    height: 100px; /* Fixed height for each item */
-    margin-right: 20px; /* Space between items */
-    background-color: #f0f0f0; /* Background color for items */
-    display: flex; /* Enables flexbox properties for centering text */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    border: 1px solid #ccc; /* Adds border around each item */
+    flex: 0 0 auto; 
+    width: 200px; 
+    height: 100px; 
+    margin-right: 20px; 
+    background-color: #f0f0f0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid #ccc; 
 }
 
 #plotly-pie{

@@ -15,7 +15,7 @@
   <div class="container1">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">About</a></li>
+        <li class="nav-item" id = "main"><a href="#" class="nav-link active" aria-current="page">Main</a></li>
         <li class="nav-item"><a href="#projects-anchor" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="#skills-anchor" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="#photography-anchor" class="nav-link">Photography</a></li>
@@ -31,11 +31,11 @@
         <div class="col-lg-6 col-xl-6 top-row-left">
           </div>
         <div class="col-lg-6 col-xl-6 top-row-right">
-          <h2 class="name">Daniel Jo</h2>
-          <h2 class="lead"> Programmer</h2>
-          <h2 class="lead"> Software Developer</h2>
-          <h2 class="lead"> Graduation May 2024</h2>
-          <h2 class="lead"> Veteran (Intelligence Agent: S.Korean Army)</h2>
+          <h2 class="name"><span class ="title" id = "my-name"> Daniel Jo </span></h2>
+          <h2 class="lead"><span class ="title">Programmer</span></h2>
+          <h2 class="lead"><span class ="title">Software Developer</span></h2>
+          <h2 class="lead"> <span class ="title">Graduation May 2024</span></h2>
+          <h2 class="lead"><span class ="title">Veteran (Intelligence Agent: S.Korean Army)</span></h2>
         </div>
         
     </div>
@@ -46,17 +46,25 @@
     <hr class="featurette-divider" id="projects-anchor">
 
     <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Academic Projects</h2>
+      <h2 class="pb-2 border-bottom">Projects</h2>
+      <h6 class="opacity-75 subtitle">- Over 30 projects</h6>
+      <br>
+      <h6 class="opacity-75 subtitle">- 5 Featured</h6>
       <div class="row row-cols-2 row-cols-lg-2 align-items-stretch g-4 py-5">
 
   
         <div class="col">
           <a href="https://daniel-git-contribute.github.io/avian-defense/" id="proj1">
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <img src="images/td/game.png">
-                <h5>Avian Defense</h5>
-                <h5>(#THREE.JS #Game Algorithms #JS)</h5>
+                <div class = 'proj-info'>
+                    <h5>Avian Defense</h5>
+                    <div class = "tag-box">
+                        <h5 class = "tags">THREE.JS</h5>
+                        <h5 class = "tags">Game Algorithms</h5>
+                        <h5 class = "tags">JS</h5>
+                        <h5 class = "tags">NPM</h5>
+                    </div>
                 </div>
               </div>
           </a>
@@ -65,10 +73,15 @@
         <div class="col">
           <a href="review.html" id="proj2">
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <img src="images/group_project.png">
-                <h5>Full-Stack Homepage with Database</h5>
-                <h5>(#Collaboration #SQL #Python #Bottle #JS)</h5>
+                <div class = 'proj-info'>
+                    <h5>Full-Stack Web Project</h5>
+                    <div class = "tag-box">
+                        <h5 class = "tags">SQL</h5>
+                        <h5 class = "tags">Python</h5>
+                        <h5 class = "tags">Bottle</h5>
+                        <h5 class = "tags">JS</h5>
+                    </div>
                 </div>
               </div>
           </a>
@@ -78,63 +91,57 @@
         <div class="col">
           <a href="data_visualization.html" id="proj3">
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <img src="images/data_vis/heat_thumb.png">
-                <h5>Data Visualization</h5>
-                <h5>(#Plotly #Matplotlib #DASH #JS #Pandas)</h5>
+                <div class = 'proj-info'>
+                    <h5>Data Visualization</h5>
+                    <div class = "tag-box">
+                        <h5 class = "tags">Plotly</h5>
+                        <h5 class = "tags">PLT</h5>
+                        <h5 class = "tags">DASH</h5>
+                        <h5 class = "tags">JS</h5>
+                        <h5 class = "tags">Pandas</h5>
+                    </div>
                 </div>
               </div>
           </a>
         </div>   
 
+
+        <div class="col" id="proj3">
+          <a href="https://akurtle.github.io/Sodoku/" id="proj2">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                <img src="images/sudoku.png">
+                <div class = 'proj-info'>
+                    <h5>Sudoku</h5>
+                    <div class = "tag-box">
+                        <h5 class = "tags">JS</h5>
+                        <h5 class = "tags">AI</h5>
+                    </div>
+                </div>
+              </div>
+          </a>
+        </div>      
+
+        <div class="col" id="proj2">
+          <a href="https://daniel-git-contribute.github.io/BubbleSort/" id="proj2">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                  <img src="images/sort.png">
+                    <div class = 'proj-info'>
+                        <h5>Bubble Sort Simulator</h5>
+                        <div class = "tag-box">
+                            <h5 class = "tags">P5.js</h5>
+                            <h5 class = "tags">JS</h5>
+                        </div>
+                    </div>
+
+              </div>
+          </a>
+        </div>
+        
+
       </div>
     </div>
 
-
-    <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Personal Projects</h2>
-        <div class="row row-cols-2 row-cols-lg-2 align-items-stretch g-4 py-5">
-     
-    
-          <div class="col" id="proj3">
-            <a href="https://akurtle.github.io/Sodoku/" id="proj2">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <img src="images/sudoku.png">
-                  <h5>Sudoku</h5>
-                  <h5>(#Collaboration #JS #Genetic_Algorithm)</h5>
-                  </div>
-                </div>
-            </a>
-          </div>      
-
-          <div class="col" id="proj2">
-            <a href="https://daniel-git-contribute.github.io/BubbleSort/" id="proj2">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <img src="images/sort.jpg">
-                  <h5>Bubble Sort Sim</h5>
-                  <h5>(#P5.js #JS)</h5>
-                  </div>
-                </div>
-            </a>
-          </div>
-          
-          
-          <div class="col" id = "proj1">
-            <a href="https://daniel-git-contribute.github.io/keyboard/" id="proj1">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <img src="images/piano.jpg">
-                  <h5>Piano Sim</h5>
-                  <h5>(#JS)</h5>
-                  </div>
-                </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
 
 
 
@@ -318,7 +325,7 @@
     <hr class="featurette-divider" id="courses-anchor">
 
     <div class="container px-4 py-5 other-skills" id="other-skills">
-        <h2 class="pb-2 border-bottom">Courses Taken</h2>
+        <h2 class="pb-2 border-bottom">All CS Courses Taken</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 
             <div class="col d-flex align-items-start">
@@ -326,6 +333,7 @@
                 <div>
                     <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP4304</h3>
                     <p>Data Visualization</p>
+                    <p>•Grade: A</p>
                 </div>
             </div>
           
@@ -334,6 +342,7 @@
                 <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP3202</h3>
                   <p>Intro to Machine Learning</p>
+                  <p>•Grade: A</p>
                 </div>
             </div>
           
@@ -343,6 +352,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP3401</h3>
                   <p>Data Mining</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -351,6 +361,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP4303</h3>
                   <p>AI in Computer Games</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -359,6 +370,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP3201</h3>
                   <p>Nature-Inspired Computing</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -367,6 +379,7 @@
                 <div>
                     <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP3200</h3>
                     <p>Algorithmic Techniques for AI</p>
+                    <p>•Grade: B</p>
                 </div>
             </div>
 
@@ -375,6 +388,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP3600</h3>
                   <p>Algorithm Design and Analysis</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -383,6 +397,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2008</h3>
                   <p>Social Issues and Professional Practice</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -391,7 +406,8 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2007</h3>
                   <p>Information Management</p>
-                  <h5>• SQL and relational models</h5>
+                  <h5>•SQL and relational models</h5>
+                  <p>•Grade: A</p>
 
               </div>
             </div>
@@ -401,6 +417,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2006</h3>
                   <p>Computer Networking</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -409,6 +426,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2005</h3>
                   <p>Software Engineering</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -417,6 +435,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2004</h3>
                   <p>Intro to Operating Systems</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -425,6 +444,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2003</h3>
                   <p>Computer Architecutre</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -433,6 +453,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2002</h3>
                   <p>Data Structures & Algorithms</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -440,8 +461,8 @@
               <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP2001</h3>
-                  <p>Object-Oritented Programming</p>
-                  <h5>• Java Course</h5>
+                  <p>Object-Oritented Programming(JAVA)</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
           
@@ -450,6 +471,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP1003</h3>
                   <p>Foundations of Computing Systems</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -458,6 +480,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP1002</h3>
                   <p>Intro to Logic for Comp Sci</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
@@ -466,6 +489,7 @@
               <div>
                   <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">COMP1001</h3>
                   <p>Intro to Programming</p>
+                  <p>•Grade: A</p>
               </div>
             </div>
 
