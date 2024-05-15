@@ -159,7 +159,9 @@
     text-align: center;
 }
 .contact{
-    background-color: #fce041;
+    /* background-color: darkolivegreen; */
+    /* background-color: #fce041; */
+    background-color: white;
     border-radius: 2rem;
     width: 130px;
     color: black;
@@ -175,10 +177,14 @@
     border-radius: 2rem;
     border-width: 4px;
     border-style: solid;
-    border-color: #fce041;
+    border-color: white;
+    /* border-color: #fce041; */
+    /* border-color: darkolivegreen;; */
     transition: border-color 0.5s ease;
     width: 120px;
-    color: #fce041;
+    color:white;
+    /* color: #fce041; */
+    /* color: darkolivegreen; */
     text-shadow: 0.5px 0.1px 5px black;
     padding-top: 7px;
     
@@ -186,7 +192,7 @@
 
 .about:hover {
     border-color: black; /* Change border color to blue on hover */
-    background-color: #1d2923;
+    background-color: lightslategray;
 }
 
 .contact:hover{
@@ -194,12 +200,15 @@
 }
 
 .portrait{
-    border-radius: 3rem;
-    border-width: 10px;
+    margin-top: 90px;
+    border-radius: 6rem;
+    border-width: 7px;
+    
+    
     border-style: solid;
-    /* color: #76b587; */
-    color: darkolivegreen;
-    /* color: #a3daf3; */
+    color: white;
+    /* color: darkolivegreen; */
+    /* color: #fce041;; */
     /* color: whitesmoke; */
     height: auto;
 }
@@ -243,7 +252,8 @@
     background: linear-gradient(
     to bottom,
     transparent 50%,
-    #fce041 50%
+    /* #fce041 50% */
+    /* darkolivegreen 50% */
     );
 }
 
