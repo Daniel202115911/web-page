@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stock Prediction</title>
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+
+
+
+<body>
+    <br>
+    <h1 class = 'main-title'>Stock Prediction AI Model Demo</h1>
+    <h5 class = 'caveat'>Caveat: This model is work in progress. Stock trading based on this model is not advised.</h5>
+    <hr class="featurette-divider">
+    <br>
+    <br>
+    <div class = 'intro'>
+        
+    </div>
+
+
+    
+    <div class = visual>
+        <br>
+        <br>
+
+        <h1 class = 'title' id = 'plotly-pie-title'>FIG1. Stock Prediction Model's Training vs Actual Data</h1>
+        <h1 class = 'title' id = 'plotly-pie-title'>S&P500</h1>
+        <br>
+        <br>
+        <div class = 'caption'>
+            <h3>INTERACTIVE GRAPH</h3>
+            <h4 class = 'explanation' id = 'upper-exp'>BLUE: Model Prediction</h4>
+            <h4 class = 'explanation'>BLACK: Actual Price</h4>
+        </div>
+        <div class ='iframe-control'>
+            <iframe id="plotly-stock" src='./sub_html/plotly_stock/model_test.html'></iframe>
+        </div>
+
+        <div class = 'after-thought'>
+            <h3>Evaluation: The model has been trained on all the S&P500 data from 2000-2022. The model has some good guesses when there will be an uptrend or a down trend, but the actual values tend to overshoot or undershoot.</h3>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1 class = 'title' id = 'plotly-pie-title'>FIG2. Same Model's Prediction 6 months into the future</h1>
+        <br>
+        <br>
+
+        <div class = 'caption'>
+            <h3>INTERACTIVE GRAPH</h3>
+            <h4 class = 'explanation' id = 'upper-exp'>BLUE: Model Prediction</h4>
+            <h4 class = 'explanation'>BLACK: Actual Price</h4>
+        </div>
+            
+        <div class ='iframe-control'>
+            <iframe id="plotly-stock" src='./sub_html/plotly_stock/future_pred.html'></iframe>
+        </div>
+
+        <div class = 'after-thought'>
+            <h3>Evaluation: It seems that the model doesn't know how to make sense of the most recent bull market (Oct 2023 - March 2024). Ideas for improvements: 1) Get more relevant data for uptrends and downtrends. 2) Add more weight to those data.</h3>
+            <br>
+            <h3>This is exciting because the model is already making pseudo intellectual guesses based on just 4 variables! Imagine if more quality data was fed to this model.</h3>
+        </div>
+        
+
+
+        <h4 class = 'technology'>Technologies Used: Plotly, Plotly Express, Pandas, XGBOOST</h4>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+    </div>
+
+    <div>
+        <hr class="featurette-divider1">
+        <h5 id="bottom-comment">This page has been designed and programmed by Daniel</h5>
+        <h5 id="bottom-comment">All photos on this page are the intellectual property Daniel J.</h5>
+        <p><a class="btn btn-lg go-top" href="index.html">Back to Main Page</a></p>
+    </div>
+
+
+
+
+</body>
+</html>

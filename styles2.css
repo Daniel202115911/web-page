@@ -91,7 +91,14 @@ button{
     border: none;
 }
 
-
+#plotly-stock{
+    width:90%;
+    height:650px;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    z-index: 1;
+}
 
 .iframe-control{
     justify-content: center;
@@ -126,4 +133,60 @@ button{
 
 .subtitle{
     text-align: center;
+}
+
+.explanation{
+    text-align: left;
+    font-weight: 300;
+    margin-left: 13%;
+}
+
+.caption #upper-exp{
+    margin-top: 50px;
+    margin-bottom: -20px;
+    color: blue;
+}
+
+.caption{
+    margin-bottom: -70px;
+    margin-left: 15%;
+    z-index: 100;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caption h3{
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 22px;
+    
+}
+
+.after-thought h3{
+    margin-left: 13%;
+    margin-right: 13%;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 200;
+    
+}
+.after-thought{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -10px;
+}
+
+.caveat{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.go-top{
+    font-size: 2rem;
 }
