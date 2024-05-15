@@ -1,41 +1,36 @@
 
-@media(max-width: 720px){
+@media(max-width: 992px){
 
-    .top-row-left{
+    #head-content{
+        display: inline-flex;
+        gap: 5vw;    
+    }
+    
+    .top-row-right{
         order:1;
-        color: white;
+    }
+
+    .portrait{
+        margin-top: 30px;
+    }
+
+    .contact-about{
+        margin-top: 1rem;
     }
 
     h2.name{
         font-weight: 700;
-        font-size: 45px;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;   
-    }
-
-    h2.lead{
-        font-weight: 200 !important;
-        font-size: 20px;
-        margin: 3px;
-    }
-
-}
-
-@media(min-width: 720px){
-
-    .top-row-left{
-        order:1;
-    }
-    h2.lead{
-        font-size: 20px;
-        margin: 3px;
-    }
-
-    h2.name{
-        font-weight: 700;
-        font-size: 50px;
+        font-size: 7.3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-        
     }
+
+    h2.lead{
+        margin:3px;
+        font-size: 3rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+
+
 
     .text-body-secondary{
         text-shadow: none;
@@ -43,7 +38,12 @@
 }
 
 
-@media(min-width: 1200px){
+@media(min-width: 992px){
+
+    #head-content{
+        display: inline-flex;
+        gap: 15vw;    
+    }
 
     .main-container{
         width: 1000px;
@@ -51,24 +51,29 @@
         margin: 0 auto;
     }
     
+    .portrait{
+        margin-top: 25px;
+    }
+
     .head-container{
         margin-left: -200px;
         margin-right: -200px;
     }
 
-    .top-row-left{
+    .top-row-right{
         order:1;
     }
+
+
     h2.name{
         font-weight: 700;
-        font-size: 60px;
+        font-size: 7.3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-        
     }
 
     h2.lead{
         margin:3px;
-        font-size: 20px;
+        font-size: 3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     }
 
@@ -89,6 +94,119 @@
     }
 }
 
+#popup{
+    display: none;
+    position: fixed;
+    border-radius: 1rem;
+    border-width: 3px;
+    z-index: 100;
+    color:aliceblue;
+    background-color: black;
+    opacity: 80%;
+    width: 500px;
+    height: 210px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+#gif-popup{
+    display: none;
+    position: fixed; 
+    filter: hue-rotate(55deg) brightness(0.7);
+    z-index: 100;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#close-popup{
+    text-align: right;
+}
+#close-popup button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-right: 20px;
+    margin-top:-5px;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-detail{
+    text-align: left;
+    margin-left: 60px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.copy{
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    background-image: url("images/copy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+    
+}
+
+.contact-about{
+    display: inline-flex;
+    gap: 10px;
+    width: 500px;
+    text-align: center;
+}
+.contact{
+    background-color: #fce041;
+    border-radius: 2rem;
+    width: 130px;
+    color: black;
+    border-style: solid;
+    border-width: 4.5px;
+    border-color: black;
+    transition: border-color 0.3s ease;
+    text-shadow: 0.5px 0.5px 0px black;
+    padding-top: 7px;
+}
+.about{
+    background-color: black;
+    border-radius: 2rem;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fce041;
+    transition: border-color 0.5s ease;
+    width: 120px;
+    color: #fce041;
+    text-shadow: 0.5px 0.1px 5px black;
+    padding-top: 7px;
+    
+}
+
+.about:hover {
+    border-color: black; /* Change border color to blue on hover */
+    background-color: #1d2923;
+}
+
+.contact:hover{
+    border-color: white; /* Change border color to blue on hover */
+}
+
+.portrait{
+    border-radius: 3rem;
+    border-width: 10px;
+    border-style: solid;
+    /* color: #76b587; */
+    color: darkolivegreen;
+    /* color: #a3daf3; */
+    /* color: whitesmoke; */
+    height: auto;
+}
+
+
+
+
 
 .head-container .featurette{
     display: flex;
@@ -96,18 +214,32 @@
     
 }
 
-.top-row-right h2.name{
+.top-row-left{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    order: 2;
+    
+}
+
+.top-row-left h2.name{
     color: black !important;
     text-shadow: 0.5px 0.5px 2px white;
+    width: 500px;
 }
-.top-row-right h2.lead{
-    text-shadow: 0.5px 0.5px 2px black;
+.top-row-left h2.lead{
+    text-shadow: 1px 1px 5px black;
     font-weight:400!important ;    
     color: white;
+    width: 500px;
 }
 
 
-.top-row-right h2.name span{
+
+.top-row-left h2.name span{
     background: linear-gradient(
     to bottom,
     transparent 50%,
@@ -144,7 +276,6 @@
 
 .featurette{
     justify-content: center;
-    text-align: center;
     padding-bottom: 30px;
     background-image: url("images/mojave.jpg");
     background-repeat: no-repeat;
@@ -161,20 +292,19 @@
     font-weight: 600;
 }
 
-.top-row-left{
+.top-row-right{
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.top-row-right{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     justify-content: center;
     align-items: center;   
     padding-top: 10px;
     padding-bottom: 10px;
     order: 2;
+    
 }
+
 
 .go-top{
     display: flex;

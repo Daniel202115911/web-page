@@ -19,7 +19,7 @@
         <li class="nav-item"><a href="#projects-anchor" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="#skills-anchor" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="#photography-anchor" class="nav-link">Photography</a></li>
-        <li class="nav-item"><a href="#courses-anchor" class="nav-link">Courses Taken</a></li>
+        <li class="nav-item"><a href="#courses-anchor" class="nav-link">Academics</a></li>
         <li class="nav-item"><a href="#other-anchor" class="nav-link">Other</a></li>
       </ul>
     </header>
@@ -28,17 +28,50 @@
 <div class ="main-container">  
   <div class ="head-container">
     <div class="featurette" id = "about-me">
-        <div class="col-lg-6 col-xl-6 top-row-left">
+      <div id = 'head-content'>
+        
+          <div class="col-lg-6 col-xl-6 top-row-left">
+              <h2 class="name"><span class ="title" id = "my-name"> Daniel Jo </span></h2>
+              <h2 class="lead"><span class ="title">Computer Scientist</span></h2>
+              
+              <div class = 'contact-about'>
+                <a href="about_me.html">
+                  <button class = 'about'>
+                    <h5>ABOUT</h5>
+                  </button>
+                </a>
+                  <button class = 'contact'>
+                    <h5>CONTACT</h5>
+                  </button>
+
+              </div>
+
+
           </div>
-        <div class="col-lg-6 col-xl-6 top-row-right">
-          <h2 class="name"><span class ="title" id = "my-name"> Daniel Jo </span></h2>
-          <h2 class="lead"><span class ="title">Computer Scientist</span></h2>
-          <h2 class="lead"> <span class ="title">Graduation May 2024 from Memorial University of Newfoundland</span></h2>
-          <h2 class="lead"><span class ="title">Veteran (Intelligence Agent: S.Korean Army)</span></h2>
-          <h2 class="lead"><span class ="title">EMAIL: dys.om@hotmail.com</span></h2>
-          <h2 class="lead"><span class ="title">CELL: 709-746-8428</span></h2>
-          
-        </div>
+
+          <div id ='popup'> 
+              <div id ='close-popup'>
+                <button id = 'close-popup-btn' >x</button>
+              </div>
+              
+              <div id ='contact-detail'>
+                  <h4 id = 'email'>✉️: dys.om@hotmail.com<button onclick="copy('dys.om@hotmail.com')" class="copy" id="copy1"></button></h4>
+                  <h4 id = 'cell'>☎️: 709-746-8428<button onclick="copy(7097468428)" class="copy" id ='copy2'></button></h4>
+              </div>
+          </div>
+
+          <div id = 'gif-popup'>
+              <img class ='gif-popup' src = "images/check.gif" width = "80" height ="80">
+          </div>
+
+          <div class="col-lg-6 col-xl-6 top-row-right">
+              <img class ="portrait" src="images/portrait2.png" width="220" height="200">
+          </div>
+
+      </div>
+        
+
+        
         
     </div>
   </div>
@@ -343,7 +376,7 @@
     <hr class="featurette-divider" id="courses-anchor">
 
     <div class="container px-4 py-5 other-skills" id="other-skills">
-        <h2 class="pb-2 border-bottom">All CS Courses Taken</h2>
+        <h2 class="pb-2 border-bottom">Academics</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 
             <div class="col d-flex align-items-start">
@@ -641,6 +674,7 @@
     <p><a class="btn btn-lg go-top" href="#">Back to Top ⇑</a></p>
   
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="index.js" charset="utf-8"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     

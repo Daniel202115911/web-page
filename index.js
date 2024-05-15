@@ -1,17 +1,36 @@
-// document.getElementById("proj1").addEventListener("click", function(){
-//     alert("button clicked!");
-// });
 
-<script>
-  // Check if the current page is the homepage (you can adjust the condition as needed)
-  const isHomepage = window.location.pathname === "/";
+// $('#close-popup-btn').on("click", function(){
+//   $('popup').toggle();
+// })
 
-  // Enable the download link if not on the homepage
-  {/* if (!isHomepage) {
-    const downloadLink = document.getElementById("homepage-download");
-    if (downloadLink) {
-      downloadLink.removeAttribute("disabled");
-    }
-  } */}
-</script>
 
+$(document).ready(function(){
+  $('#close-popup-btn').click(function(){
+      $('#popup').toggle();
+  });
+});
+
+$(document).ready(function(){
+  $('.contact').click(function(){
+      $('#popup').toggle();
+      
+  });
+
+});
+
+let timeoutID;
+function copy(info){
+  clearTimeout(timeoutID);
+  let src = $('#popup').attr('src');
+  $('.gif-popup').attr('src', '');
+  $('.gif-popup').attr('src', "images/check.gif");
+  $('#gif-popup').toggle();
+  $('#popup').toggle();
+
+  timeoutID = setTimeout(function(){
+    $('#gif-popup').toggle();
+    $('.gif-popup').attr('src', '');
+  }, 1800);
+  navigator.clipboard.writeText(info);
+
+}
