@@ -42,16 +42,15 @@
 
 @media(min-width: 992px){
 
-    .head-container{
-        margin-left: -200px;
-        margin-right: -200px;
+    .featurette{
+        width:100vw;   
     }
     #head-content{
-        gap: 50px;
+        gap: 40px;
     }
 
     .main-container{
-        width: 992px;
+        width: 100vw;
         display: block;
         margin: 0 auto;
     }
@@ -102,18 +101,22 @@
 
 @media(min-width: 1200px){
 
-    .head-container{
-        margin-left: -200px;
-        margin-right: -200px;
+    .featurette{
+        width:1600px; 
+        height: 700px;  
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        
     }
 
     #head-content{
         gap: 30px;
-        margin-left: 200px;
     }
 
     .main-container{
-        width: 1000px;
+        justify-content: center;
+        width: 1200px;
         display: block;
         margin: 0 auto;
     }
