@@ -215,6 +215,7 @@
     display: inline-flex;
     gap: 10px;
     width: 500px;
+    margin-top: 20px;
     text-align: center;
 }
 .contact{
@@ -299,6 +300,7 @@
 .top-row-left h2.lead{
     text-shadow: 1px 1px 5px black;
     font-weight:400!important ;    
+    margin-top: -30px;
     color: white;
 }
 
