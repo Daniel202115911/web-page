@@ -2,8 +2,7 @@
 @media(max-width: 992px){
 
     #head-content{
-        display: inline-flex;
-        gap: 5vw;    
+        gap: 40px;    
     }
     
     .top-row-right{
@@ -11,7 +10,7 @@
     }
 
     .portrait{
-        margin-top: 90px;
+        margin-top: 80px;
     }
 
     .contact-about{
@@ -19,12 +18,15 @@
     }
 
     h2.name{
+        width: 500px;
+        color:#4599ed;
         font-weight: 700;
         font-size: 7.3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     }
 
     h2.lead{
+        width: 500px;
         margin:3px;
         font-size: 3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -41,7 +43,6 @@
 @media(min-width: 992px){
 
     #head-content{
-        display: inline-flex;
         gap: 15vw;    
     }
 
@@ -55,10 +56,6 @@
         margin-top: 65px;
     }
 
-    .head-container{
-        margin-left: -200px;
-        margin-right: -200px;
-    }
 
     .top-row-right{
         order:1;
@@ -66,12 +63,14 @@
 
 
     h2.name{
+        width: 500px;
         font-weight: 700;
         font-size: 7.3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     }
 
     h2.lead{
+        width: 500px;
         margin:3px;
         font-size: 3rem;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -92,6 +91,66 @@
         padding-right: 10%;   
 
     }
+}
+
+@media(min-width: 1200px){
+
+    #head-content{
+        gap: 30px;
+        margin-left: 100px;
+    }
+
+    .main-container{
+        width: 1000px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .portrait{
+        margin-top: 65px;
+        margin-left: 100px;
+    }
+
+    
+
+    h2.name{
+        width: 700px;
+        font-weight: 700;
+        font-size: 8rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+
+    h2.lead{
+        width: 700px;
+        margin:3px;
+        font-size: 4rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+
+    .head-container .text-body-secondary{
+        font-size: 60px;
+    }
+
+    .text-body-secondary{
+        text-shadow: none;
+    }
+
+    #myCarousel-review{
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;   
+        padding-right: 10%;   
+
+    }
+}
+
+.head-container{
+    margin-left: -200px;
+    margin-right: -200px;
+}
+
+#head-content{
+    display: inline-flex;
 }
 
 #popup{
@@ -235,13 +294,12 @@
 .top-row-left h2.name{
     color: black !important;
     text-shadow: 0.5px 0.5px 2px white;
-    width: 500px;
+    
 }
 .top-row-left h2.lead{
     text-shadow: 1px 1px 5px black;
     font-weight:400!important ;    
     color: white;
-    width: 500px;
 }
 
 
