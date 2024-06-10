@@ -1,3 +1,19 @@
+let TIME_OUT = 300;
+let last_executed = 0;
+let isRUNNING = false;
+
+const CSS = {
+    MP: '#MP-info',
+    CV: '#CV-info',
+    BR: '#BR-info'
+}
+
+const LINK = {
+    MP: 'https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=MP',
+    CV: 'https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=CV',
+    BR: 'https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=BR'
+}
+
 async function fetchScrapedData() {
     try {
         const response = await fetch('YOUR_CLOUD_FUNCTION_URL');
@@ -9,46 +25,70 @@ async function fetchScrapedData() {
 }
 
 
-async function getBR(){
-    try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=BR')
-        const data = await response.json(); 
-        displayList(data, '#BR-info');
-    } catch (error) {
-        console.log(error);
+async function getLoc(loc){
+    let css_address = CSS[loc];
+    let link = LINK[loc];
+
+    if(isRUNNING){return;}
+
+    if(Date.now() - last_executed > TIME_OUT){
+        isRUNNING = true;
+        try{
+            clearDisplay(css_address);
+            const response = await fetch(link)
+            const data = await response.json(); 
+            setTimeout(()=>{
+                displayList(data, css_address);
+                last_executed = Date.now();
+                isRUNNING = false;
+            }, 100);
+        } catch (error) {
+            console.log(error);
+            isRUNNING = false;
+        }
     }
+    
 }
 
-async function getCV(){
-    try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=CV')
-        const data = await response.json(); 
-        displayList(data, '#CV-info');
-    } catch (error) {
-        console.error('Error fetching data:', error.message); 
-    }
-}
 
-async function getMP(){
-    try{
-        const response = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=MP')
-        const data = await response.json(); 
-        displayList(data, '#MP-info');
-    } catch (error) {
-        console.error('Error fetching data:', error.message); 
-    }
-}
 
 async function getALL(){
-    await getMP();
-    await getCV();
-    await getBR();
+
+    if(isRUNNING){return;}
+
+    if(Date.now() - last_executed > TIME_OUT){
+        isRUNNING = true;
+        clearAll();
+        const response_br = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=BR')
+        const data_br = await response_br.json(); 
+        const response_cv = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=CV')
+        const data_cv = await response_cv.json(); 
+        const response_mp = await fetch('https://us-central1-omega-booster-425919-s7.cloudfunctions.net/scrape/?param=MP')
+        const data_mp = await response_mp.json();
+        setTimeout(()=>{
+            displayList(data_mp, '#MP-info');
+            displayList(data_cv, '#CV-info');
+            displayList(data_br, '#BR-info');
+            last_executed = Date.now();
+            isRUNNING = false;
+        }, 100); 
+        
+    }
+    
+
+}
+
+function clearDisplay(div_locator){
+    $(div_locator).empty();
+}
+
+function clearAll(){
+    $('#MP-info').empty();
+    $('#CV-info').empty();
+    $('#BR-info').empty();
 }
 
 function displayList(list, div_locator){
-    // Clear data div
-    $(div_locator).empty();
-
     // If there are dates available 
     if(list.length > 0){
         let ul = $('<ul></ul>').css(
