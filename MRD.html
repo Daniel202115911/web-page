@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MRD Web Scraping</title>
+    <link rel="stylesheet" href="MRD.css">
+</head>
+
+
+<body>
+    <br>
+    <h1 class = 'main-title'>Road Test Dates</h1>
+    <h1 class = 'title'>Newfoundland and Labrador</h1>
+    <hr class="featurette-divider">
+    <br>
+    <br>
+    
+    <div class = 'visual'>
+        
+        <br>
+        <div class = 'gridbox'>
+            
+            <div class = 'location' id = 'MP'>
+                <div>
+                    <img class = 'town_img' src = "images/data_scrape/MtPearl.png">
+                    <div class = 'dates'>MOUNT PEARL</div>
+                    <div class = 'dates'>Available Dates:</div>
+                </div>
+                
+                <h3 id = 'MP-info'>CLICK ↓</h3>
+                <div><button class ="btn" onclick="getMP()">REFRESH</button></div>
+            </div>
+
+            <div class = 'location' id = 'CV'>
+                <div>
+                    <img class = 'town_img' src = "images/data_scrape/Clarenville.png">
+                    <div class = 'dates'>CLARENVILLE</div>
+                    <div class = 'dates'>Available Dates:</div>
+                </div>
+                
+                <h3 id = 'CV-info'>CLICK ↓</h3>
+                <div><button class ="btn"  onclick="getCV()">REFRESH</button></div>
+            </div>
+
+            <div class = 'location' id = 'BR'>
+                <div>
+                    <img class = 'town_img' src = "images/data_scrape/BayRoberts.png">
+                    <div class = 'dates'>BAY ROBERTS</div>
+                    <div class = 'dates'>Available Dates:</div>
+                </div>
+                
+                <h3 id ='BR-info'>CLICK ↓</h3>
+                <div><button class ="btn"  onclick="getBR()">REFRESH</button></div>
+            </div>
+        </div>
+
+        <div id = 'refresh-all'>
+            <div>
+                <button id = 'MASTER' onclick="getALL()"><img src="images/data_scrape/refresh_all.png"></button>
+                
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <h4 class = 'technology'>Technologies Used: </h4>
+        <h4 class = 'technology'>GOOGLE CLOUD,</h4>
+        <h4 class = 'technology'>INSOMNIA, AXIOS, SELENIUM</h4>        
+        <h4 class = 'technology'>NODE.JS, JQUERY,JS, CSS, HTML</h4>        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    
+    </div>
+
+    <hr class="featurette-divider">
+    <div class = "tail">
+        <div class = "btn2">
+            <p><a class="btn2 btn-lg go-top" href="index.html">Back to Main Page</a></p>
+        </div>
+        <br>
+        <h5 id="bottom-comment">Report issues or gives suggestions to Daniel Jo at:</h5>
+        <h5 id="bottom-comment">dys.om@hotmail.com</h5>
+        
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="web_scrape.js" charset="utf-8"></script>
+    <br>
+    <br>
+
+
+
+
+
+</body>
+</html>

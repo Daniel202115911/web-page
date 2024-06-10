@@ -1,0 +1,177 @@
+
+@media (max-width:620px) {
+    .gridbox{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    
+    
+}
+
+@media (min-width:800px) {
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+        
+    }
+    
+}
+
+@media (min-width:1200px) {
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+}
+
+.location{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.2);
+    border-radius: 1rem;
+    margin: 1.5%;
+    height: 450px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+
+.btn{
+    padding: 15px 25px;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-left: 22px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 9px #999;
+    height: 35px;
+  }
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateX(-2px) translateY(4px);
+}
+
+#refresh-all{
+    margin-top: 100px;
+    margin-bottom: -70px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#MASTER img{
+    width: 180px;
+    height: 210px;
+    outline: none;
+}
+
+#MASTER:active {
+    transform: translateX(0px) translateY(4px);
+  }
+
+#MASTER{
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: white;
+    border: none;
+}
+
+.main-title{
+    text-align: center;
+    font-weight: 3000;
+    font-size: 7.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -5rem;
+    background-color: black;
+    color: white;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.technology{
+    text-align: center;
+    font-weight: 100;
+}
+
+.btn-options{
+    text-align: center;
+}
+.checkbox{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    margin: 3px;
+    border-radius: 2px;
+    border-color: gray;
+    background: #f6f6f6;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.featurette-divider{
+    width: 70%;
+}
+
+
+
+.go-top{
+    font-size: 2rem;
+}
+
+.town_img{
+    width: 200px;
+    height: 200px;
+}
+
+#bottom-comment{
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 7px;
+}
+
+.btn2{
+    justify-content: center;
+    text-align: center;
+}
+.tail{
+    margin-bottom: 40px;
+}
