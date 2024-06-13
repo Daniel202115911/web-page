@@ -42,12 +42,39 @@
     
 }
 
+
+@media (min-width:620px) {
+    .gridbox{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .main-title{
+        font-size: 4rem;
+    }
+
+    .title{
+        font-size: 1.3rem;
+        margin-top: -2rem;
+    }
+
+    .btn{
+        font-size: 25px !important;
+        padding-bottom: 40px !important;
+    }
+    
+    
+}
+
+
 @media (min-width:800px) {
     .gridbox{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
     .title{
         margin-top: -4rem;
@@ -67,7 +94,18 @@
         margin-right: 10%;
     }
     .title{
-        margin-top: -5rem;
+        position: relative;
+        margin-top: -4rem;
+        width: 600px;
+        left: 50%;
+        transform: translate(-92%);
+    }
+    .title-div{
+        display: flex;
+        justify-content: center;
+        width: 1200px;
+        display: block;
+        margin: 0 auto;
     }
     
 }
