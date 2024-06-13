@@ -73,6 +73,7 @@
     .gridbox{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         margin-left: 1%;
         margin-right: 1%;
     }
@@ -90,6 +91,7 @@
     .gridbox{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         margin-left: 10%;
         margin-right: 10%;
     }
