@@ -1,3 +1,21 @@
+.title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.main-title{
+    text-align: center;
+    font-weight: 3000;
+    font-size: 7rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 @media (max-width:620px) {
     .gridbox{
@@ -5,7 +23,20 @@
         grid-template-rows: 1fr 1fr 1fr;
         margin-left: 5%;
         margin-right: 5%;
-        
+    }
+
+    .main-title{
+        font-size: 3rem !important;
+    }
+
+    .title{
+        font-size: 1rem !important;
+        margin-top: -2rem;
+    }
+
+    .btn{
+        font-size: 25px !important;
+        padding-bottom: 40px !important;
     }
     
     
@@ -17,7 +48,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 3%;
         margin-right: 3%;
-        
+    }
+    .title{
+        margin-top: -4rem;
+    }
+
+    .main-title{
+        font-size: 6.3rem;
     }
     
 }
@@ -28,7 +65,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 10%;
         margin-right: 10%;
-        
+    }
+    .title{
+        margin-top: -5rem;
     }
     
 }
@@ -97,24 +136,9 @@
     border: none;
 }
 
-.main-title{
-    text-align: center;
-    font-weight: 3000;
-    font-size: 7.2rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-.title{
-    text-align: center;
-    font-weight: 900;
-    font-size: 2rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: -5rem;
-    background-color: black;
-    color: white;
-    margin-left: 22%;
-    margin-right: 22%;
-}
+
+
 
 .technology{
     text-align: center;
