@@ -21,8 +21,8 @@
     .gridbox{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .main-title{
